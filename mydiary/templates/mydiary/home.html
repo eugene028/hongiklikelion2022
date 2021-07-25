@@ -1,6 +1,70 @@
-<h1>아기사자의 다이어리입니다.</h1>
-<a href="{% url 'new' %}">일기 작성하기</a>
+{% extends 'mydiary/base.html' %}
+{% block content %}
+{% load static %}
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div id="home_img1" class="carousel-item home-img-display active">
+      </div>
+      <div id="home_img2" class="carousel-item home-img-display">
+      </div>
+      <div id="home_img3" class="carousel-item home-img-display">
+      </div>
+    </div>
+    <div class="carousel-caption home-caption-display">
+        <h1 class="pb-3">홍익대 멋쟁이 사자처럼</h1>
+        <p class="pb-3">내 아이디어를 내 손으로 실현한다.</p>
+        <a href="#" class="btn btn-warning text-white">자세히 보기</a>
+      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<header class="posting-header">
+<span class="posting-en">Posting</span>
+<h2 class="posting-h">홍익대 멋사 게시판</h2>
+<a class="text-info" href="{%url 'new' %}">포스트 작성하기</a>
+</header>
+<main>
+    <div class="container">
+        <div class="row">
 {% for post in posts_list%}
-    <a href="{% url 'detail' index=post.pk %}">{{post.title}}</a><br>
-    <hr>
+<div class="col-lg-4 col-12 pb-5">
+<div class="card">
+    <img src="{% static 'img/a.jpg' %}" class="card-img-top" alt="a">
+    <div class="card-body">
+      <h5 class="card-title">{{post.title}}<h5>
+      <p class="card-text">{{post.body}}</p>
+      <a href="{% url 'detail' index=post.pk %}">포스트 보기</a>
+    </div>
+  </div>
+</div>
 {% endfor %}
+</div>
+</div>
+</main>
+
+
+<a href="{% url 'new' %}">일기 작성하기</a>
+<a href="{% url 'tag_home' %}">해시태그 모아보기</a>
+<br><br>
+
+<h1>BABY LION DIARY</h1>
+{% if user.is_authenticated %}
+{{user.major}}과 {{user.MBTI}}유형이신 {{user.username}}님 환영합니다!!
+<br><br>
+<a href="{% url 'logout' %}">로그아웃하기</a><br><br>
+{% else %}
+<a href="{% url 'login' %}">로그인하기</a><br><br>
+<a href="{% url 'signup' %}">회원가입하기</a><br><br>
+{% endif %}
+<a href="{% url 'new' %}">일기 작성하기</a>
+<br><br>
+{% for post in posts_list %}
+<a href="{% url 'detail' index=post.pk %}">{{post.title}}</a><br>
+{% endfor %}
+{% endblock %}

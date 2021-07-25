@@ -1,14 +1,51 @@
-<h1>일기 내용 자세히 보기</h1>
-
-<div class="posts">
+{% extends 'mydiary/base.html' %}
+{% block content %}
+{% load static %}
+<h1>DIARY DETAIL</h1>
+<div>
     {% if post.pub_date %}
-        <div class="date">
-            {{post.pub_date}}
-        </div>
+    <div>
+        {{post.pub_date}}
+    </div>
     {% endif %}
     <h1>{{post.title}}</h1>
     <p>{{post.body|linebreaks}}</p>
+    {% for image in post.image_set.all %}
+        <img src="{{image.file.url}}" width="450"><br>
+        {% endfor %}
+    {% if post.image %}
+        <img src="{{post.image.url}}" height=400><br>
+        이미지 다운: <a href="{{post.image.url}}" download>{{post.image.name}}</a>
+    {% endif %}
 </div>
 
-<a href="{%url 'edit' index=post.pk %}">수정하기</a><br>
-<a href="{% url 'delete' pk=post.pk %}">삭제하기</a>
+
+<form action="{% url 'tag_add' pk=post.pk %}" method="POST">
+    {% csrf_token %}
+    {{tag_form.name}}
+    <input type="submit" value="해시태그 추가">
+</form>
+
+<p>
+    {% for t in post.tags.all %}
+    <b>#{{t.name}}</b>
+    <a href="{% url 'tag_delete' pk=post.pk tag_pk=t.pk %}">X</a>
+    {% endfor %}
+</p>
+
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="text">
+    <button type="submit">댓글 달기</button>
+</form>
+
+{% for comment in comment_list %}
+<h5>{{comment.created_date}}</h5>
+<p>{{comment.text|linebreaks}}</p>
+<a href="{% url 'delete_comment' index=post.pk comment_pk=comment.pk %}">댓글 삭제</a>
+{% endfor %}
+
+
+<a href="{%url 'edit' index=post.pk %}">edit</a><br>
+<a href="{% url 'delete' pk=post.pk %}">delete</a>
+{% endblock %}
