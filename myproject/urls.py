@@ -23,6 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', mydiary.views.home,name="home"),
     path('new/', mydiary.views.new,name="new"),
+    path('aboutus/', mydiary.views.aboutus,name="aboutus"),
+    path('forlion/', mydiary.views.forlion,name="forlion"),
     path('detail/<int:index>',mydiary.views.detail, name="detail"),
     path('edit/<int:index>',mydiary.views.edit, name="edit"),
     path('detail/<int:pk>/delete',mydiary.views.delete, name="delete"),

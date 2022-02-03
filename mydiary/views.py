@@ -8,6 +8,12 @@ def home(request):
     posts=Content.objects.all()
     return render(request, 'mydiary/home.html', {'posts_list':posts})
 
+def aboutus(request):
+    return render(request, 'mydiary/aboutus.html')
+
+def forlion(request):
+    return render(request, 'mydiary/forlion.html')
+
 def new(request):
     if request.method=='POST':
         form= ContentForm(request.POST, request.FILES)
