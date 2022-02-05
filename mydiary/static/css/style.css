@@ -29,13 +29,6 @@ html, body{
     background-color: black;
 }
 
-#body-content{
-    margin-top: 0;
-    padding-top: 120px;
-    padding-bottom: 30px;
-    background-color: rgb(33, 37, 41);
-}
-
 #home_img1{background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/a.jpg);}
 #home_img2{background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/b.jpg);}
 #home_img3{background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/c.jpg);}
@@ -116,6 +109,8 @@ html, body{
     justify-content: flex-start;
     align-items: center;
     background-color: black;
+    margin-top: 0;
+    padding-top: 120px;
 }
 
 .header-text{
@@ -133,7 +128,8 @@ html, body{
 }
 
 .content-forlion{
-
+    margin-bottom: 0;
+    padding-bottom: 30px;
 }
 
 .forlion-image1{
