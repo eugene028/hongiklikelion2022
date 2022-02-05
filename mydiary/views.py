@@ -14,6 +14,9 @@ def aboutus(request):
 def forlion(request):
     return render(request, 'mydiary/forlion.html')
 
+def recruit(request):
+    return render(request, 'mydiary/recruit.html')
+
 def new(request):
     if request.method=='POST':
         form= ContentForm(request.POST, request.FILES)
