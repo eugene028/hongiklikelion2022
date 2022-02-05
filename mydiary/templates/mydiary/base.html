@@ -7,11 +7,12 @@
         <link rel="stylesheet" href="{% static 'css/style.css'%}">
     </head>
     <body>
+      <div id="body-wrapper">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="{%url 'home' %}">
-                    <img src="{%static 'img/logo.PNG'%}" width=100px, height=100px alt="likelion">
+                    <img src="{%static 'img/likelion_logo_whilte.PNG'%}" width=171px, height=29px alt="likelion">
                   </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,5 +40,6 @@
         {% block content %}
         {% endblock %}
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      </div>
     </body>
 </html>

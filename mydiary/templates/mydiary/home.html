@@ -1,7 +1,29 @@
 {% extends 'mydiary/base.html' %}
 {% block content %}
 {% load static %}
-<!DOCTYPE html>
+<main class="home-image">
+  <div class="main-cover">
+  <article class="main-text">
+      <h1>
+          홍익대학교<br>멋쟁이 사자처럼
+      </h1>
+      <h2>
+          RECRUIT 2022 10TH<BR>2022.02.21~2022.03.13
+      </h2>
+      <button class="button1" type="button" class="btn btn-warning">10기 지원하기</button>
+      <h1>
+        지원 마감 D-20
+      </h1>
+  </article>
+  <div class="sns-wrap">
+    <a href="https://www.instagram.com/likelion.hongik/?hl=ko"><img class="sns-img" src="{%static 'img/instagram.png'%}" width=300px, height=100px alt="likelion">
+    <a href="https://www.facebook.com/search/top?q=%EB%A9%8B%EC%9F%81%EC%9D%B4%20%EC%82%AC%EC%9E%90%EC%B2%98%EB%9F%BC%20at%20%ED%99%8D%EC%9D%B5%EB%8C%80%ED%95%99%EA%B5%90"><img class="sns-img" src="{%static 'img/facebook.png'%}" width=300px, height=100px alt="likelion">
+  </div>
+  <div class="meotsa">
+    <h3>멋쟁이 사자처럼 SNS</h3>
+  </div>
+</main>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <script>
@@ -23,9 +45,15 @@
 <body>
   <div id="slideshow">
     <div><img src="{% static 'img/lion-image.jpg' %}" alt="My image"/></div>
-  </div>
-  <!-- <style>
-    body{
+  </div> -->
+  <!-- <body>
+    <div class="fade-in-image">
+      <img src="{% static 'img/lion-image.jpg' %}" alt="lion-image">
+    </div>
+  </body> -->
+<!-- <body>
+  <style>
+    header{
       background-image: url(static/img/lion-image.jpg);
       background-color: black;
       height: 100vh;
@@ -68,17 +96,11 @@
         opacity: 1;
     }
   }
-    @media screen and(max-width:1024px){
-      body{
-        background-image: url(static/img/lion-image.jpg);
-        background-color: black;
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      
-    }
-  </style> -->
+  body{
+    
+  } -->
+  </style>
+  </div>
 </body>
 </html>
 
