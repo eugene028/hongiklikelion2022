@@ -7,6 +7,35 @@
 *{
     font-family:'BMEuljiro10yearslater', sans-serif;
 }
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+.nav{
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#body-wrapper{
+    min-height: 100%;
+    position: relative;
+    background-color: black;
+}
+
+#body-content{
+    margin-top: 0;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    background-color: rgb(33, 37, 41);
+}
+
 #home_img1{background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/a.jpg);}
 #home_img2{background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/b.jpg);}
 #home_img3{background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/c.jpg);}
@@ -130,6 +159,15 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 50px;
+}
+
+#X{
+    font-size: 50px;
+}
+
+#question-mark{
+    font-size: 50px;
 }
 
 footer{
@@ -137,10 +175,11 @@ footer{
     background-color: black ;
     color: white ;
     font-size: 12px;
-    position:absolute;
-    bottom:0px;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 30px;
+    position: absolute;
 }
 .nav-item{
     font-size: 30px;
