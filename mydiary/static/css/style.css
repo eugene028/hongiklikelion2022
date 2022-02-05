@@ -141,6 +141,11 @@ footer{
     box-shadow: 0 0 20px rgba(0,0,0,0,4);
 }
 
+.content-forlion{
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
 #slideshow>div{
     position:absolute;
 }
