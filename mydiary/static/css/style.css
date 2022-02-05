@@ -94,9 +94,28 @@
     color: white;
     font-size: 14px;
 }
+
 .meotsa h3{
     font-size: 14px;
 }
+
+.for-new-lion-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    margin-top: 0;
+    padding-top: 120px;
+}
+
+.header-text{
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    font-size: 14px;
+}
+
 footer{
     text-align: center; /* 글자를 중앙에 정렬하겠다.*/
     background-color: black ;
@@ -125,6 +144,12 @@ footer{
 #slideshow>div{
     position:absolute;
 }
+
+.content-forlion{
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
 .fade-in-image {
     animation: fadeIn 5s;
     -webkit-animation: fadeIn 5s;
