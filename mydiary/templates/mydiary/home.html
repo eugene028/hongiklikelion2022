@@ -1,7 +1,88 @@
 {% extends 'mydiary/base.html' %}
 {% block content %}
 {% load static %}
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    $("#slideshow>div:gt(0)").hide()
+    setInterval(function(){
+      $('#slideshow>div:first')
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo('#slideshow');
+    },3000);
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="slideshow">
+    <div><img src="{% static 'img/lion-image.jpg' %}" alt="My image"/></div>
+  </div>
+  <!-- <style>
+    body{
+      background-image: url(static/img/lion-image.jpg);
+      background-color: black;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: fadein 3s;
+      -moz-animation: fadein 3s; /* Firefox */
+      -webkit-animation: fadein 3s; /* Safari and Chrome */
+      -o-animation: fadein 3s; /* Opera */
+    }
+    @keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+    @media screen and(max-width:1024px){
+      body{
+        background-image: url(static/img/lion-image.jpg);
+        background-color: black;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+    }
+  </style> -->
+</body>
+</html>
+
+<!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div id="home_img1" class="carousel-item home-img-display active">
       </div>
@@ -10,11 +91,6 @@
       <div id="home_img3" class="carousel-item home-img-display">
       </div>
     </div>
-    <div class="carousel-caption home-caption-display">
-        <h1 class="pb-3">홍익대 멋쟁이 사자처럼</h1>
-        <p class="pb-3">내 아이디어를 내 손으로 실현한다.</p>
-        <a href="#" class="btn btn-warning text-white">구글폼 작성하기</a>
-      </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -23,13 +99,13 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-</div>
-<header class="posting-header">
+</div> -->
+<!-- <header class="posting-header">
 <span class="posting-en">Posting</span>
 <h2 class="posting-h">홍익대 멋사 게시판</h2>
 <a class="text-info" href="{%url 'new' %}">포스트 작성하기</a>
-</header>
-<main>
+</header> -->
+<!-- <main>
     <div class="container">
         <div class="row">
 {% for post in posts_list%}
@@ -70,5 +146,5 @@
 <br><br>
 {% for post in posts_list %}
 <a href="{% url 'detail' index=post.pk %}">{{post.title}}</a><br>
-{% endfor %}
+{% endfor %} -->
 {% endblock %}
