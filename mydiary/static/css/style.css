@@ -83,14 +83,14 @@
 .sns-wrap{
     text-align: right;
     position: absolute;
-    top:85%;
-    left:85%;
+    top:80%;
+    left:90%;
 }
 .meotsa{
     text-align: right;
     position: absolute;
-    top:92%;
-    left:85%;
+    top:87%;
+    left:90%;
     color: white;
     font-size: 14px;
 }
@@ -247,7 +247,7 @@ body {
   }
 .main-text {
     position: absolute;
-    top:25%;
+    top:30%;
     left:25%;
     transform: translate(-50%, -50%);
     color: white;
@@ -272,6 +272,18 @@ body {
     background-color: #FF9E1B;
     color: white;
     font-size: 24px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-color: #FF9E1B;
+    border-radius: 12px;
+}
+
+.date-box{
+    font-size: large;
+}
+
+.date-box p{
+    font-size: 36px;
+    font-family: 'Montserrat';
+    font-weight: bold;
 }
