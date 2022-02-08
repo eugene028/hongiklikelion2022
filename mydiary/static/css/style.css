@@ -68,6 +68,34 @@ html, body{
    line-height: 3;
 }
 
+.headers{
+    display: flex;
+    gap: 15px;
+}
+
+.orange-header{
+    color: orange;
+}
+
+.has-orange-text{
+    display: flex;
+    gap: 7px;
+}
+
+.orange-text{
+    color: orange;
+}
+
+.imo-wrap{
+    display: flex;
+    gap: 7px;
+}
+
+.imo img{
+    width: 35px;
+    height: 35px;
+}
+
 .posting-h{
     font-size: 2.7em;
     line-height: 1.5;
