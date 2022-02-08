@@ -154,3 +154,6 @@ cython_debug/
 
 myvenv/
 db.sqlite3
+
+# Mac
+.DS_Store

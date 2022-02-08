@@ -1,0 +1,134 @@
+/* Global */
+:root {
+  /* Color */
+  --color-orange: #ff9e1b;
+
+  /* Font size */
+  --font-large: 70px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  cursor: default;
+  background-color: black;
+}
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: white;
+  margin: 0 0;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: white;
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: white;
+  margin: 20px 0;
+}
+
+.semi-bord-font {
+  font-weight: var(--weight-semi-bold);
+}
+
+/* 수평선 */
+hr {
+  color: white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.emphasis {
+  color: var(--color-orange);
+}
+
+.content {
+  text-align: center;
+}
+
+.schedule {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HACK YOUR LIFE! */
+.big-title {
+  display: table;
+  margin: auto;
+}
+
+.like-lion-logo {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.text {
+  display: table-cell;
+  text-align: left;
+}
+
+.sub-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* content */
+.textbox {
+  color: white;
+  background-color: var(--color-orange);
+  border-radius: 15px;
+  padding: 5px;
+  width: 180px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* 모집 일정 */
+.schedule {
+  display: table;
+  margin: 0 auto;
+  width: 230px;
+}
+
+.schedule-date {
+  display: table-cell;
+  color: white;
+  padding: 0 0;
+}
+
+ul {
+  display: table;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: left;
+}
+
+span.list-bullet {
+  font-size: 5px;
+}
