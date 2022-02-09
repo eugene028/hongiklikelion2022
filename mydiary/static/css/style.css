@@ -77,14 +77,6 @@ html, body{
     color: orange;
 }
 
-.has-orange-text{
-    display: flex;
-    gap: 7px;
-}
-
-.orange-text{
-    color: orange;
-}
 
 .imo-wrap{
     display: flex;
@@ -119,6 +111,32 @@ html, body{
     }
     .posting-h{
         font-size: 2em;
+    }
+
+}
+
+@media screen and (min-device-width: 375px) and (max-device-width: 812px){
+
+    .for-new-lion-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 13px;
+        background-color: black;
+        margin-top: 0;
+        padding-top: 120px;
+    }
+    .white-header{
+        font-size: 40px;
+    }
+    .headers{
+        display: block;
+        gap: 15px;
+    }
+    .orange-header{
+        font-size: 40px;
+        color: orange;
     }
 }
 
@@ -184,6 +202,11 @@ html, body{
     justify-content: center;
     align-items: center;
     gap: 50px;
+}
+
+mark.orange {
+    color:orange;
+    background: none;
 }
 
 #X{
