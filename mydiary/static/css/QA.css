@@ -8,6 +8,8 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+
+
 /* header 태그 */
 
 .QA-header{
@@ -60,7 +62,68 @@
     color: orange;
 }
 
-.QA-introduce-people{
+.QA-introduce-people 
+{
     display: flex;
     flex-direction: row;
+    margin : 0 auto;
+}
+
+.people-box{
+    text-align: center;
+    font-family: "Noto Sans";
+    width:380px;
+    height:700px;
+}
+
+.white-name{
+    color:white;
+    font-size:30px;
+    margin:10px;
+    font-weight: 700;
+
+}
+
+.orange-name{
+    color:orange;
+    font-size:30px;
+    margin:10px;
+    font-weight: 700;
+
+}
+.white-describe{
+    color:white;
+    font-size:25px;
+    margin:20px;
+    font-weight: 500;
+}
+
+/* qA 부분 */
+
+.question-box{
+    display: flex;
+    flex-direction: row;
+    margin:30px;
+    width:auto;
+    height: 170px;
+    padding-bottom:15px;
+    border-top: solid orange 5px;
+}
+
+
+.caption-Q{
+    
+    color:orange;
+    font-size:100px;
+    font-style: "Noto Sans";
+    font-weight:1000;
+    margin-right:40px;
+}
+
+.question{
+    color:orange;
+    font-size:60px;
+    font-style: "Noto Sans";
+    font-weight:700;
+    padding-top:40px;
 }
