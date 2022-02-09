@@ -1,10 +1,39 @@
 {% extends 'mydiary/base.html' %}
 {% block content %}
 {% load static %}
-<header class="for-new-lion-header">
-    <img src="{%static 'img/hack your life.png'%}" alt="hack your life 이미지">
-    <div class="header-text">
-        <div class="white-header">멋쟁이 사자처럼 홍익대 10기</div>
-        <div class="white-header">활동 소개</div>
-    </div>
-</header>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>질의응답</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" media = "screen and (min-device-width: 375px) and (max-device-width: 812px)" href="{% static 'css/QA.css'%}">
+        <link rel="stylesheet" href="{% static 'css/QA.css'%}">
+    </head>
+
+    <body>
+        <header class="QA-header">
+            <img class = "image1" src="{%static 'img/hack your life.png'%}" alt="hack your life 이미지">
+            <div class="header-text">
+                <span class="white-header">멋쟁이 사자처럼 </span>
+                <span class="orange-header">홍익대 10기</span>
+                <div class="orange-header">운영진 소개 & QA </div>
+            </div>
+        </header>
+
+        <section class="QA-introduce">
+            <span class="orange-introduce">홍익대 멋사 10기</span><span class="white-introduce">를 이끌어 갈 운영진을 소개합니다! 🧡</span>
+            <div class="QA-introduce-people">
+                <img class = "doyeon" src="{%static 'img/people/doyeon.png'%}" alt="doyeon">
+                <img class = "jihu" src="{%static 'img/people/jihu.png'%}" alt="jihu">
+                <img class = "eugene" src="{%static 'img/people/eugene.png'%}" alt="eugene">
+                <img class = "sunhyeong" src="{%static 'img/people/sunhyeong.png'%}" alt="sunhyeong">
+                <img class = "eun" src="{%static 'img/people/eun.png'%}" alt="eun">
+            </div>
+
+        </section>
+
+    </body>
+
+{% endblock %}

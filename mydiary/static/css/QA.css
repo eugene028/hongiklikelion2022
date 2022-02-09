@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Montserrat:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+*{
+    font-family: 'Montserrat';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* header 태그 */
+
+.QA-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    background-color: black;
+    padding: 30px 25px;
+}
+.white-header{
+    color:white;
+    font-size: 60px;
+    font-family: "Noto Sans";
+    font-weight: 700;
+}
+
+.orange-header{
+    font-size: 60px;
+    font-family: "Noto Sans";
+    font-weight: 700;
+    color: orange;
+}
+
+.image1{
+    width:950px;
+    height:450px;
+}
+
+/* introduce 태그 */
+
+.QA-introduce{
+    text-align: center;
+    margin : 30px;
+}
+
+.white-introduce{
+    color:white;
+    font-size: 40px;
+    font-family: "Noto Sans";
+    font-weight: 700;
+}
+
+
+.orange-introduce{
+    font-size: 40px;
+    font-family: "Noto Sans";
+    font-weight: 700;
+    color: orange;
+}
+
+.QA-introduce-people{
+    display: flex;
+    flex-direction: row;
+}

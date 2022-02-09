@@ -12,10 +12,7 @@
 #home_img1{background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/a.jpg);}
 #home_img2{background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/b.jpg);}
 #home_img3{background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/c.jpg);}
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Montserrat:ital,wght@0,100;0,200;0,300;1,100&display=swap");
-* {
-  font-family: "Montserrat";
-}
+
 #home_img1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/a.jpg);
