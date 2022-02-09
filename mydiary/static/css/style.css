@@ -12,43 +12,74 @@
 #home_img1{background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/a.jpg);}
 #home_img2{background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/b.jpg);}
 #home_img3{background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/c.jpg);}
-
-.logo{
-    width:100px;
-    height:100px;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Montserrat:ital,wght@0,100;0,200;0,300;1,100&display=swap");
+* {
+  font-family: "Montserrat";
 }
-.home-img-display{
-    height: 90vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#home_img1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/a.jpg);
 }
-
-.home-caption-display{
-    top:37%;
-    color:white;
+#home_img2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/b.jpg);
 }
-
-.home-caption-display h1{
-    font-size:6em;
+#home_img3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/c.jpg);
 }
 
-.home-caption-display p{
-    font-size: 2.5em;
+.logo {
+  width: 100px;
+  height: 100px;
+}
+.home-img-display {
+  height: 90vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.posting-header{
-    padding:120px 0;
-    text-align: center;
+.home-caption-display {
+  top: 37%;
+  color: white;
 }
 
-.posting-en{
-   font-size: 1.2em;
-   font-weight: 700;
-   line-height: 3;
+.home-caption-display h1 {
+  font-size: 6em;
 }
 
-.posting-h{
+.home-caption-display p {
+  font-size: 2.5em;
+}
+
+.posting-header {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.posting-en {
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 3;
+}
+
+.posting-h {
+  font-size: 2.7em;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-img-display {
+    height: 60vh;
+  }
+  .home-caption-display {
+    top: 20%;
+  }
+  .posting-header {
+    padding: 70px 0;
+  }
+  .home-caption-display h1 {
     font-size: 2.7em;
     line-height: 1.5;
  }
@@ -316,4 +347,257 @@ body {
     font-size: 36px;
     font-family: 'Montserrat';
     font-weight: bold;
+}
+
+.home-caption-display p {
+    font-size: 1.6em;
+  }
+.posting-h {
+    font-size: 2em;
+  }
+
+
+.sns-img {
+  margin-right: 10px;
+  width: 51px;
+  height: 51px;
+}
+
+.sns-wrap {
+  text-align: right;
+  position: absolute;
+  top: 80%;
+  left: 90%;
+}
+.meotsa {
+  text-align: right;
+  position: absolute;
+  top: 87%;
+  left: 90%;
+  color: white;
+  font-size: 14px;
+}
+.meotsa h3 {
+  font-size: 14px;
+}
+footer {
+  text-align: center; /* 글자를 중앙에 정렬하겠다.*/
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  padding: 100 px;
+}
+.nav-item {
+  font-size: 30px;
+}
+
+#slideshow {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 634;
+  padding: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0, 4);
+}
+
+#slideshow > div {
+  position: absolute;
+}
+.fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("mydiary\static\img\a.jpg") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+  animation: myfirst 5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.home-image {
+  position: relative;
+  background-image: url("../img/lion-image.jpg");
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  animation: fadein 3s;
+  -moz-animation: fadein 3s; /* Firefox */
+  -webkit-animation: fadein 3s; /* Safari and Chrome */
+  -o-animation: fadein 3s; /* Opera */
+}
+.main-cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* backdrop-filter: blur(5px); */
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.main-text {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+  /* text-align: center; */
+  margin: 0;
+  width: 40%;
+  padding: 30px;
+}
+.main-text h1 {
+  font-size: 300%;
+  font-weight: bolder;
+  line-height: 150%;
+}
+.main-text h2 {
+  line-height: 150%;
+  font-weight: bold;
+}
+.button1 {
+  width: 245px;
+  height: 58px;
+  background-color: #ff9e1b;
+  color: white;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-color: #ff9e1b;
+  border-radius: 12px;
+}
+
+.date-box {
+  font-size: large;
+}
+
+.date-box p {
+  font-size: 36px;
+  font-family: "Montserrat";
+  font-weight: bold;
 }

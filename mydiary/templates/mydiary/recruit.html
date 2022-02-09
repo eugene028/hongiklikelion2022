@@ -1,0 +1,84 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mypage</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/recruit.css'%}">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="{%url 'home' %}">
+                    <img src="{%static 'img/logo.PNG'%}" width=100px, height=100px alt="likelion">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link px-4 active" aria-current="page" href="{%url 'aboutus' %}">ABOUT US</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-4 active" href="{%url 'forlion' %}">FOR 10TH LIONS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-4 active" href="{%url 'recruit' %}">RECRUIT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-4 active" href="#" tabindex="-1" aria-disabled="true">Q&A</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        
+        <div>
+            <div class="big-title">
+              <img class="like-lion-logo" src="{%static 'img/likelion_logo_edited.png'%}" width="200" alt="">
+              <div class="text">
+                <h1>HACK YOUR LIFE!</h1>
+                <h2 class="sub-title"> 멋쟁이 사자처럼<span class="emphasis"> 모집 일정</span></h2>
+              </div>
+            </div>
+        </div>
+        <hr> 
+        <h2 class="textbox">모집 대상</h2>
+        <h2 class="content">홍익대학교 재학, 휴학생</h2>
+        <h3 class="content">매주 수요일 정기 세션(오후 8시-10시)에 참여 가능하신 분</h3>
+        <h2 class="textbox">지원 방법</h2>
+        <h3 class="content semi-bord-font">↓ 아래 지원 링크를 통해서 지원해주세요 ↓</h3>
+        <h3 class="content"><a class="emphasis" href="google.form">멋쟁이 사자처럼 10기 지원하기</a></h3>
+        <h2 class="textbox">모집 일정</h2>
+        <div class="schedule">
+          <div class="schedule-date">
+            <ul class="content">
+              <li>2.21-3.13</li>
+              <li>3.15</li>
+              <li>3.16-3.21</li>
+              <li>3.23</li>
+              <li>3.25</li>
+              <li>3.26</li>
+            </ul>
+          </div>
+          <div class="schedule-text">
+            <span>:&ensp; 서류 접수</span><br>
+            <span>:&ensp; 서류 합격 발표</span><br>
+            <span>:&ensp; 면접</span><br>
+            <span>:&ensp; 최종 합격 발표</span><br>
+            <span>:&ensp; 홍대 멋사 OT</span><br>
+            <span>:&ensp; 서류 접수</span><br>
+          </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- <footer>copyright CODE LION. ALL rights reserved.</footer> -->
+    </body>
+</html>
