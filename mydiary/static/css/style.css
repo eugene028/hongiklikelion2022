@@ -46,7 +46,7 @@
     line-height: 1.5;
  }
 
-@media only screen and (max-width:600px){
+/* @media only screen and (max-width:600px){ */
     .home-img-display{
         height: 60vh;
     }
@@ -65,7 +65,7 @@
     .posting-h{
         font-size: 2em;
     }
-}
+/* } */
 
 .sns-img{
     margin-right: 10px;
@@ -124,7 +124,7 @@ footer{
     -moz-animation: fadeIn 5s;
     -o-animation: fadeIn 5s;
     -ms-animation: fadeIn 5s;
-  }
+}
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
@@ -280,3 +280,4 @@ body {
     font-family: 'Montserrat';
     font-weight: bold;
 }
+
