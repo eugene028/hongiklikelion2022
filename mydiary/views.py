@@ -1,3 +1,4 @@
+from tokenize import maybe
 from django.shortcuts import render,redirect, get_object_or_404
 from django.utils import timezone
 from .models import Content,Comment, Tag, Image
@@ -14,6 +15,10 @@ def aboutus(request):
 def forlion(request):
     return render(request, 'mydiary/forlion.html')
 
+def recruit(request):
+    return render(request,'mydiary/recruit.html')
+def QA(request):
+    return render(request,'mydiary/QA.html')
 def new(request):
     if request.method=='POST':
         form= ContentForm(request.POST, request.FILES)
