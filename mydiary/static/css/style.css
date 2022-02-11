@@ -48,6 +48,29 @@
     line-height: 1.5;
  }
 
+<<<<<<< HEAD
+=======
+/* @media only screen and (max-width:600px){ */
+    .home-img-display{
+        height: 60vh;
+    }
+    .home-caption-display{
+        top:20%;
+    }
+    .posting-header{
+        padding: 70px 0;
+    }
+    .home-caption-display h1{
+        font-size: 2.7em;
+    }
+    .home-caption-display p{
+        font-size: 1.6em;
+    }
+    .posting-h{
+        font-size: 2em;
+    }
+/* } */
+>>>>>>> 0dec9b8c6f7204a3e4415d7f93ccfddf17abd629
 
 .sns-img{
     margin-right: 10px;
@@ -107,7 +130,7 @@ footer{
     -moz-animation: fadeIn 5s;
     -o-animation: fadeIn 5s;
     -ms-animation: fadeIn 5s;
-  }
+}
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
@@ -286,3 +309,4 @@ body {
     font-family: 'Montserrat';
     font-weight: bold;
 }
+
