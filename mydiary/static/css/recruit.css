@@ -142,3 +142,11 @@ span {
 span.list-bullet {
   font-size: 5px;
 }
+.navbar-toggler{
+  width: 100px;
+  height: 100px;
+}
+.navbar-toggler-icon{
+  width: 80px;
+  height: 80px;
+}

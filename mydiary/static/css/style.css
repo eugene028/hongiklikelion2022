@@ -29,9 +29,7 @@
 .home-caption-display p{
     font-size: 2.5em;
 }
-#valentine{
-    font-size: 180%;
-}
+
 .posting-header{
     padding:120px 0;
     text-align: center;
@@ -303,8 +301,15 @@ body {
 }
 
 .date-box p{
-    font-size: 36px;
+    font-size: 30px;
     font-family: 'Montserrat';
     font-weight: bold;
 }
-
+.navbar-toggler{
+    width: 100px;
+    height: 100px;
+}
+.navbar-toggler-icon{
+    width: 80px;
+    height: 80px;
+}
