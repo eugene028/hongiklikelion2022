@@ -48,8 +48,7 @@
     line-height: 1.5;
  }
 
-<<<<<<< HEAD
-=======
+
 /* @media only screen and (max-width:600px){ */
     .home-img-display{
         height: 60vh;
@@ -69,8 +68,7 @@
     .posting-h{
         font-size: 2em;
     }
-/* } */
->>>>>>> 0dec9b8c6f7204a3e4415d7f93ccfddf17abd629
+
 
 .sns-img{
     margin-right: 10px;
