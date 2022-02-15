@@ -52,14 +52,17 @@ body{
 
 /* introduce 태그 */
 
-.QA-introduce{
-    text-align: center;
-    margin : 30px;
-    display: flex;
+#people-box-moblie1{
+    text-align: center ;
+   
+    display: flex  ;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: center  ;
+    align-items: center  ;
+    margin : 0 auto;
 }
+
+
 
 .white-introduce{
     color:white;
@@ -81,6 +84,7 @@ body{
     display: flex;
     flex-direction: row;
     margin : 0 auto;
+    align-items: center;
 }
 
 .people-box{
@@ -88,6 +92,7 @@ body{
     font-family: "Noto Sans";
     width:380px;
     height:700px;
+    margin:30px;
 }
 
 .people-image-box{
@@ -274,6 +279,7 @@ footer{
         font-family: "Noto Sans";
         width:183.5px;
         height:400px;
+        margin:5px;
     }
 
     .people-image-box{
